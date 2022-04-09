@@ -7,17 +7,28 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube`
 minikube start
 ```
 
-## Get minikube version	
+### Get minikube version	
 `minikube version`
-
-## Get minikube status	
+### Check minikube latest version	
+`minikube update-check`
+### Get minikube status	
 `minikube status`
-
-## Start minikube	
-`minikube status`
-
-## Delete minikube	
+### Start minikube	
+`minikube start`
+### Stop minikube	
+`minikube stop`
+### Delete minikube	
 `minikube delete`
+### Get minikube IP
+`minikube ip`
+### Get minikube logs
+`minikube logs`
+### Get minikube dashboard
+`minikube dashboard`
+
+## Reference
+
+https://cheatsheet.dennyzhang.com/cheatsheet-minikube-a4
 
 # Install kubernates client(kubectl)
 
@@ -30,3 +41,5 @@ echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
 
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
+### Get kubernates client version
+`kubectl version --client`
