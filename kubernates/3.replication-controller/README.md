@@ -33,7 +33,7 @@
 
 ![replica scal up output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/3.replication-controller/images/scale-up-replica.png)
 
-### Displaying the pod ID and pod node whhen listing pods
+### Displaying the pod ID and pod node when listing pods
 `kubectl get pods -o wide`
 ### Again run curl to EXTERNAL-IP
 `curl 10.101.138.243:80`
