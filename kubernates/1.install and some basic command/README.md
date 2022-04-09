@@ -45,6 +45,10 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ### Get kubernates client version
 `kubectl version --client`
 
+## Reference
+
+https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
 
 # Some basic command of kubernaties
 
