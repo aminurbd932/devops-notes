@@ -13,10 +13,13 @@ or
 ### Check that the service
 `kubectl get services`
 
-<!-- ![kubectl get services output](https://raw.githubusercontent.com/minhaz1217/devops-notes/master/19.%20kubernates%20deploying%20app/images/kubectl%20get%20services.png) -->
+![kubectl get services pending output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/2.deploying%20application/images/service-e-ip-pending.png)
 
 ### if EXTERNAL-IP is pending , there is a magic command!
 `minikube tunnel`
+
+![kubectl get services pending output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/2.deploying%20application/images/service-e-ip-sucess.png)
+
 ### Now run curl to the nginx service
 `curl 10.111.247.165:80`
 ### Delete service that command using
