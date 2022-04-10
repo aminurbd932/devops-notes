@@ -17,7 +17,7 @@
 ### Get output pods
 `kubectl get pods -o wide`
 
-![kubectl get pods -o wide output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/3.replication-controller/images/pod-redis.png)
+![kubectl get pods -o wide output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/5.kubernetes-pods/images/pod-redis.png)
 
 `kubectl get pods -o json`
 `kubectl get pods -o yaml`
@@ -34,7 +34,7 @@
 ### Connect to the pod via port forwarder
 `kubectl port-forward <pod-name> 8080:80`
 
-![kubectl port-forward output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/3.replication-controller/images/pod-port-forward.png)
+![kubectl port-forward output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/5.kubernetes-pods/images/pod-port-forward.png)
 
 ### Then curl output
 `curl localhost:8080`
@@ -46,12 +46,12 @@
 ## View pods with labels
 `kubectl get po --show-labels`
 
-![kubectl port-forward output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/3.replication-controller/images/pod-port-forward.png)
+![kubectl port-forward output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/5.kubernetes-pods/images/pod-port-forward.png)
 
 ### View the labels of pods in column
 `kubectl get po -L env,run`
 
-![kubectl get po output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/3.replication-controller/images/pod-column.png)
+![kubectl get po output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/5.kubernetes-pods/images/pod-column.png)
 
 ### Adding labels to specific pods
 `kubectl label po redis run=manual`
