@@ -46,7 +46,7 @@
 ## View pods with labels
 `kubectl get po --show-labels`
 
-![kubectl port-forward output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/5.kubernetes%20pods/images/pod-port-forward.png)
+![kubectl port-forward output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/5.kubernetes%20pods/images/pod-with-label.png)
 
 ### View the labels of pods in column
 `kubectl get po -L env,run`
