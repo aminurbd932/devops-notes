@@ -26,6 +26,8 @@ minikube start
 `minikube logs`
 ### Get minikube dashboard
 `minikube dashboard`
+## Open a shell
+`minikube ssh`
 
 ## Reference
 
