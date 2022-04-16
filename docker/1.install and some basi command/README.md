@@ -1,4 +1,4 @@
-# Docker networking
+# Docker install and some basic command
 
 ## Docker install
 ```
@@ -16,8 +16,6 @@ echo \
 
   sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
-
-## Docker some basic command
 
 ### Version check
 `docker -v`
@@ -45,7 +43,7 @@ echo \
 `docker stop <container>`
 ### Start container
 `docker start <container>`
-### 
+### Execute command for inside container
 `sudo docker exec -it <container> bash`
 ### Show low-level infos (json formate)
 `docker inspect nginx`
@@ -64,6 +62,8 @@ echo \
 `docker build -t <repo-name> <project-name>`
 ### docker pull an image/repo to a registry
 `docker pull <repo-name>`
+
+## Others Command
 
 ### List docker network
 `docker network list`
