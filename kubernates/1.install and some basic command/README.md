@@ -75,3 +75,7 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 `alias k=kubectl`
 ### View the pod IP and the pods node when listing pods
 `k get pods -o wide`
+### To delete everything from the current namespace
+`kubectl delete all --all`
+### To delete everything from the specific namespace
+`kubectl delete all --all -n <namespace>`

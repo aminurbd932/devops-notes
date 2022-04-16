@@ -25,7 +25,10 @@
 ## Log of a pods
 
 ### Get log specific pod
-`kubectl logs <pod-name>`
+```
+kubectl logs <pod-name>
+kubectl logs <pod-name> -f
+```
 ### Get logs if the pod has multiple container
 `kubectl logs <pod-name> -c <container-name>`
 
@@ -101,6 +104,13 @@
 `kubectl delete pod --all`
 ### Delete a pod by label
 `kubectl delete pod -l env=testing`
+
+## Some command
+
+### Command run inside pod
+`kubectl exec -it <pod-name> sh`
+### Command run specific container inside pod
+`kubectl exec -it <pod-name> <container-name> sh`
 
 ## Reference
 
