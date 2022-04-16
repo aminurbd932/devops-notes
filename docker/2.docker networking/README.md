@@ -17,6 +17,7 @@ ip addr
 `sudo docker network ls`
 
 ![docker network ls output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/docker/2.docker%20networking/images/network-list.png)
+#### When we create a container it is allocated within a default bridge network
 
 ### Inspect a bridge network
 `sudo docker inspect bridge`
