@@ -16,7 +16,7 @@ ip addr
 ### List docker network 
 `sudo docker network ls`
 
-![docker network ls output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/docker/2.docker%20networking/images/network-interface.png)
+![docker network ls output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/docker/2.docker%20networking/images/network-list.png)
 
 ### Inspect a bridge network
 `sudo docker inspect bridge`
