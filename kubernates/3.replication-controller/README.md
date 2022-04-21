@@ -1,8 +1,8 @@
 # Replication controller
 
 ### A replicationController has three parts:
-i) A `label selector`, which determines what pods are in the ReplicationController’s scope.
-ii) A `replica count`, which specifies the desired number of pods that should be running.
+i) A `label selector`, which determines what pods are in the ReplicationController’s scope.<br>
+ii) A `replica count`, which specifies the desired number of pods that should be running.<br>
 iii) A `pod template`, which is used when creating new pod replicas.
 
 ### Create a replication controller, it has 5 pods
