@@ -1,11 +1,19 @@
 # Replication controller
 
+### A replicationController has three parts:
+i) A `label selector`, which determines what pods are in the ReplicationController’s scope.
+ii) A `replica count`, which specifies the desired number of pods that should be running.
+iii) A `pod template`, which is used when creating new pod replicas.
+
 ### Create a replication controller, it has 5 pods
 `kubectl create -f nginx-replication-controller.yaml`
 ### Check replication controller
 `kubectl get rc`
 
 ![kubectl get rc output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/3.replication-controller/images/rc-5-pods.png)
+
+### View details of ReplicationController
+`kubectl describe rc <rc-name>`
 
 ### See 5 pods by command using
 `kubectl get pods`
@@ -37,5 +45,11 @@
 `kubectl get pods -o wide`
 ### Again run curl to EXTERNAL-IP
 `curl 10.101.138.243:80`
+### Edit the RC in a text edit
+`kubectl edit rc <rc-name>`
 ### Delete one pod and see that the replication controller rotates the other
-`kubectl delete pod nginx-6hkr4`
+`kubectl delete pod <pod-name>`
+### Delete a rc and all pods
+`kubectl delete rc <rc-name>`
+### To keep the pod but delete the RC use this
+`kubectl delete rc <rc-name> --cascade=false`
