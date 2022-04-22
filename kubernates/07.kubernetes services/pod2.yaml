@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    service: backend
+  name : simple-nodejs-2
+spec:
+  containers:
+  - image: aminur932/simple-nodejs
+    name: simple-nodejs-2
+    ports:
+    - containerPort: 80
+      protocol: TCP

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name : simple-nodejs-3
+spec:
+  containers:
+  - image: aminur932/simple-nodejs
+    name: simple-nodejs-3
