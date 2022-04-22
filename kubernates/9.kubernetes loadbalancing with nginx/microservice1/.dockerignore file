@@ -1,2 +1,0 @@
-docker build -t aminurbd932/microservice1 microservice1
-docker login -u "aminur932" -p "mypassword" docker.io

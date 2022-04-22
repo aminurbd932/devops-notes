@@ -62,3 +62,7 @@ kubectl create -f server2-svc.yaml
 `kubectl get svc -o wide`
 
 ![kubectl get svc output](https://raw.githubusercontent.com/aminurbd932/devops-notes/main/kubernates/09.kubernetes%20loadbalancing%20with%20nginx/images/all-svc.png)
+
+### Now send request to the external-ip and see that the request is being loadbalanced
+
+`curl localhost:3001`
